@@ -27,7 +27,7 @@
                 <div class="menu">
                     <div class="top-nav">
                         <div class="logo">
-                            <h1>Codevo</h1>
+                            <h1>MArk</h1>
                         </div>
                         <div class="close">
                             <i class="bx bx-x"></i>
@@ -64,6 +64,9 @@
                     <i class="bx bx-menu"></i>
                 </div>
             </div>
+
+            <img src="moon.png" alt="" id="icon1">
+
         </nav>
 
         <!--Hero-->
@@ -644,25 +647,25 @@
                             <span>
                                 <i class="fas fa-map-marker-alt"></i>
                             </span>
-                            42 Dream House, Dreammy street, 7131 Dreamville, USA
+                            tatabyby
                         </div>
                         <div>
                             <span>
                                 <i class="far fa-envelope"></i>
                             </span>
-                            company@gmail.com
+                            nikal@gmail.cum
                         </div>
                         <div>
                             <span>
                                 <i class="fas fa-phone"></i>
                             </span>
-                            456-456-4512
+                            828 mu mai leke baith
                         </div>
                         <div>
                             <span>
                                 <i class="far fa-paper-plane"></i>
                             </span>
-                            Dream City, USA
+                            Dream City bas sapna dek.
                         </div>
                     </div>
                 </div>
@@ -681,5 +684,21 @@
     <!-- Custom Script -->
 
     <script src="index.js"></script>
+
+    <script>
+        var icon1 = document.getElementById("icon1");
+
+        icon1.onclick = function () {
+
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+
+                icon1.src = "sun.png";
+            } else {
+
+                icon1.src = "moon.png";
+            }
+        }
+    </script>
 
 </body>

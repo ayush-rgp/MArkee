@@ -7,6 +7,27 @@
   --grey-alt: #d1e2e9;
   --yellow: #ffd800;
   --green: #59b210;
+  --footer: #f1f1f1;
+  --winhead: #253b70;
+  --shopnow: #fc7c7c;
+  --saleoff: #b888ff;
+  --off: #fbb419;
+}
+.dark-theme {
+
+  --white: #222;
+  --black: #fff;
+  --pink: #f60091;
+  --grey: #444;
+  --grey2: #959595;
+  --grey-alt: black;
+  --yellow: #ffd800;
+  --green: #59b210;
+  --footer: black;
+  --winhead: aqua;
+  --shopnow: #222;
+  --saleoff: white;
+  --off: aqua;
 }
 
 *,
@@ -27,7 +48,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: #fff;
+  background-color: var(--white);
   color: #243a6f;
   position: relative;
   z-index: 1;
@@ -73,6 +94,17 @@ li {
   }
 }
 
+/*icon*/
+
+#icon1 {
+
+  width: 30px;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  right: 100px;
+}
+
 /* Header */
 .header {
   position: relative;
@@ -100,7 +132,7 @@ li {
 .nav.fix-nav .logo,
 .nav.fix-nav .cart-icon,
 .nav.fix-nav .hamburger {
-  color: #fff;
+  color: var(--white);
 }
 
 .navigation {
@@ -152,7 +184,7 @@ li {
     width: 80%;
     max-width: 40rem;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--white);
     transition: all 500ms ease-in-out;
     z-index: 100;
   }
@@ -170,11 +202,11 @@ li {
   }
 
   .top-nav .logo {
-    color: #fff;
+    color: var(--white);
   }
 
   .top-nav .close {
-    color: #fff;
+    color: var(--white);
     font-size: 3rem;
     padding: 1rem;
     cursor: pointer;
@@ -245,30 +277,30 @@ li {
 }
 
 .hero-content h2 {
-  color: #b888ff;
+  color: var(--saleoff);
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .hero-content .discount {
-  color: #fbb419;
+  color: var(--off);
 }
 
 .hero-content h1 span {
-  color: #253b70;
+  color: var(--winhead);
   font-size: 6rem;
   font-weight: 700;
   display: block;
   line-height: 1;
-  text-shadow: 3px 3px 0 #f1f1f1, 4px 4px 0 #f1f1f1;
+  text-shadow: 3px 3px 0 var(--footer), 4px 4px 0 var(--footer);
 }
 
 .btn {
   display: inline-block;
-  background-color: #fc7c7c;
+  background-color: var(--shopnow);
   padding: 1.2rem 4rem;
-  color: #fff;
+  color: var(--black);
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 3rem;
@@ -352,7 +384,7 @@ li {
 .advert-box {
 
   position: relative;
-  color: #fff;
+  color: var(--white);
   height: 27rem;
   border-radius: 1.6rem;
   padding: 1.6rem;
@@ -389,7 +421,7 @@ li {
 
   position: relative;
   height: 100%;
-  border: 2px dashed#f1f1f1;
+  border: 2px dashed var(--footer);
   border-radius: 1rem;
 }
 
@@ -460,7 +492,7 @@ li {
 
 .product {
   height: 48rem;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
   text-align: center;
@@ -524,7 +556,7 @@ li {
 }
 
 .product-header .icons span {
-  background-color: #fff;
+  background-color: var(--white);
   font-size: 2.5rem;
   display: block;
   border-radius: 50%;
@@ -548,7 +580,7 @@ li {
 .product-header .icons span:hover {
 
   background: palevioletred;
-  color: #fff;
+  color: var(--white);
 }
 
 .product:hover .icons {
@@ -569,7 +601,7 @@ li {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 50rem;
+  height: 60rem;
   background-color: #243a6f;
 }
 
@@ -601,7 +633,7 @@ li {
 
 .product-banner .content h1 span {
 
-  color: #fff;
+  color: var(--white);
   font-size: 6rem;
   font-weight: 700;
   display: block;
@@ -656,7 +688,7 @@ li {
 
   position: relative;
   padding: 5rem;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   transition:all 300ms ease-in-out;
   text-align: center;
@@ -741,7 +773,7 @@ li {
 
 .footer {
 
-  background-color: #222;
+  background-color: var(--black);
   padding: 6rem 1rem;
   line-height: 3rem;
 }
@@ -755,14 +787,14 @@ li {
 
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  color: #fff;
+  color: var(--white);
 }
 
 .footer-center a:link,
 .footer-center a:visited {
 
   display: block;
-  color: #f1f1f1;
+  color: var(--footer);
   font-size: 1.4rem;
   transition: .6s;
 }
@@ -773,7 +805,7 @@ li {
 }
 
 .footer-center div {
-  color: #f1f1f1;
+  color: var(--footer);
 }
 
 .footer-center h3{
@@ -852,7 +884,7 @@ form span {
 .pagination span:hover {
   border: 1px solid #243a6f;
   background-color: #243a6f;
-  color: #fff;
+  color: var(--white);
 }
 
 /* Detail */
@@ -959,7 +991,7 @@ form span {
 .product-detail .form .addCart {
   background: #ff7c9c;
   padding: 0.8rem 4rem;
-  color: #fff;
+  color: var(--white);
   border-radius: 3rem;
 }
 
@@ -1034,7 +1066,7 @@ table {
 th {
   text-align: left;
   padding: 0.5rem;
-  color: #fff;
+  color: var(--white);
   background-color: #fc7c7c;
   font-weight: normal;
 }
